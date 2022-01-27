@@ -3,6 +3,9 @@
 import unittest
 import os
 import sys  # 导入sys模块
+from common.HTMLTestRunnerPlugins import HTMLTestRunner
+
+
 sys.setrecursionlimit(30000)  # 将默认的递归深度修改为3000
 
 """
@@ -16,7 +19,7 @@ class Read_config_Caselist:
         :return: 以字典的形式返回用例列表
         :note:使用读取txt文件的形式生成testPlan
         """
-        #创建空列表
+        #创建空列表，定义为全局变量，后边的方法也可以惊醒调用
         global caseList
         caseList = []
 
@@ -62,6 +65,6 @@ class Read_config_Caselist:
 
 if __name__ == '__main__':
     readCaseList = Read_config_Caselist()
-    readCaseList.read_config_CaseListMetod("config_RuncaseList.txt")
+    readCaseList.read_config_CaseListMetod("config_runCaseList.txt")
     readCaseList.get_runCase()
 

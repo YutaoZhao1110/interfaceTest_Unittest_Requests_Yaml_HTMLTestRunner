@@ -1,5 +1,5 @@
 test_login
-#test_test
+test_test
 #test_login_error
 #test_mineinfo
 #test_sc_add

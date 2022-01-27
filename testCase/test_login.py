@@ -1,2 +1,9 @@
+import unittest
 
-print("到这里了")
+class test_DemoA(unittest.TestCase):
+    def test_printinfo(self):
+        print("run this ")
+
+
+if __name__ == '__main__':
+    unittest.main()

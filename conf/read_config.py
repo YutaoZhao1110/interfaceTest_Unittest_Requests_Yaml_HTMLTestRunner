@@ -18,6 +18,7 @@ class ReadConfig:
         #获取section（param）下面的所有键值对，以字典形式返回
         item = dict(self.conf.items(param))
         return item
+
 if __name__ == '__main__':
     rf = ReadConfig()
     rf.readconfig("mail")
